@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --foretitle-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: var(--font-redHatDisplay);
+}
+
+h2 {
+  color: rgb(var(--foretitle-rgb));
+}
+
+.sectitleWhite {
+  color: rgb(var(--foreground-rgb));
+}
+
+h1,
+h2,
+h3,
+h4,
+.urbanist {
+  font-family: var(--font-urbanist);
+}
+
+.cousine {
+  font-family: var(--font-cousine);
+}
+
+.offerGradient {
+  background: linear-gradient(to bottom, #f5ecf6 100%, #f5f3f5 0%);
+}
+
+.purple {
+  color: #8247e4;
+}
+
+.bg-purple {
+  background-color: #8247e4;
+}
+
+.text-primary-pink-1 {
+  color: #e60479;
+}
+
+.bg-primary-pink {
+  background-color: #e60479 !important;
+}
+
+.mobile-hero-banner {
+  background-image: url(../../public/images/mobile/mobile-hero-banner.png);
+}
+
+.mobile-viewguide {
+  background-image: url(../../public/images/viewguide-mobile.png);
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.liniar-pricing {
+  background: linear-gradient(180deg, #f4e7ff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.liniar-proxy {
+  background: linear-gradient(90deg,
+      #4e415f 0.42%,
+      #171a1f 45.5%,
+      #171a1f 99.71%);
+}
+
+.liniar-partnar {
+  background: linear-gradient(123deg,
+      rgba(4, 52, 172, 0.2) 7.39%,
+      rgba(0, 0, 0, 0) 28.9%),
+    linear-gradient(83deg,
+      rgba(230, 4, 121, 0.2) -1.28%,
+      rgba(0, 0, 0, 0) 20.27%),
+    linear-gradient(211deg,
+      rgba(130, 71, 228, 0.2) 12.56%,
+      rgba(0, 0, 0, 0) 61%),
+    linear-gradient(90deg, #000 0%, #1e1d1e 100%);
+}
+
+.linear-partnerCard {
+  background: linear-gradient(90deg, #ffb79a 20%, #d9d9d9 0%, #ffffff);
+}
+
+.subsCription-liniar {
+  background: linear-gradient(270deg, #0434ac 0%, #8247e4 100%);
+}
+
+.cta-liniar {
+  background: linear-gradient(90deg, #e60479 0%, #8247e4 100%);
+}
+
+.choose-liniar {
+  background: linear-gradient(180deg, rgba(239, 219, 255, 0) 0%, #efdbff 100%);
+}
+
+.count-mobile-liniar {
+  border-radius: 25px;
+  background: linear-gradient(0deg, #E60479 0%, #8247E4 100%);
+}
+
+@media(min-width: 1024px) {
+  .count-liniar {
+    background: linear-gradient(270deg, #e60479 0%, #8247e4 100%);
+  }
+
+  .get-period {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+}
+
+.offer-liniar {
+  background: var(--light-purple, linear-gradient(104deg, #F5ECF6 0%, rgba(245, 243, 245, 0.00) 70.35%));
+}
+
+.accordionExpand {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 26.5%, #FFF 100%);
+
+}
+
+.accordionExpand .content {
+  border-color: rgba(211, 160, 252, 0.3);
+  border-width: 0 1px 2px;
+  border-radius: 0 0 40px 40px;
+}
+
+
+.partnar-liniar {
+  background: linear-gradient(234deg, rgba(255, 183, 154, 0.20) 0%, rgba(217, 217, 217, 0.00) 54.69%);
+}
+
+.textWhite {
+  color: rgb(var(--foreground-rgb));
+}
+
+.partnarCard {
+  min-height: 280px;
+}
+
+.slick-dots {
+  bottom: -70px !important;
+}
+
+.slick-dots li button {
+  height: 10px !important;
+  width: 10px !important;
+  background: #D9D9D9 !important;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.slick-dots li button.active {
+  opacity: 1;
+}
+
+.mobileMenuWrap {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(130, 71, 228, 0.10) 100%), var(--Black, #0C0B0C);
+}
